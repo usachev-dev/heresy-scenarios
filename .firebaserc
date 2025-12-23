@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "clouds-of-smoke",
+    "beta": "clouds-beta"
+  },
+  "targets": {},
+  "etags": {}
+}

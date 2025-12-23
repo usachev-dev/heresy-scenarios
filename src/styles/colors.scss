@@ -1,0 +1,22 @@
+$yellow: #E8B810;
+$yellow-invert: #FFF;
+$blue: #1747ef;
+$black: #352B2B;
+$text: #352B2B;
+$grey: #dbdbdb;
+$white: white;
+
+$primary: $yellow;
+$accent: $yellow;
+$primary-invert: $yellow-invert;
+$red:          hsl(348, 86%, 61%);
+
+$danger: #FF470FFF;
+
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
