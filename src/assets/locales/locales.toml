@@ -1,11 +1,19 @@
 [title]
-en = "Clouds of Smoke"
-ru = "Облака Дыма"
+en = "Horus Heresy v3 Scenario builder"
+ru = "Horus Heresy v3: Конструктор Сценариев"
 
 [description]
-en = "Clouds of Smoke: epic wargame in the age of powder"
-ru = "Облака дыма: эпический варгейм эпохи пороха"
+en = "Diverse system for playing both narrative and competitive scenarions in Horus Heresy v3"
+ru = "Гибкая система сценариев для Horus Heresy v3, как для нарративной игры, так и для турниров"
 
 [keywords]
-en = "Wargame, epic scale, black powder, thirty years war, fire and sword, early modern, wargame rules"
-ru = "Варгейм, исторический варгейм, правила, историчка, эпик, тридцатилетняя война, огнем и мечом, раннее новое время"
+en = "Wargame, warhammer, horus heresy, scenarios"
+ru = "Варгейм, warhammer, horus heresy, сценарии"
+
+[create]
+en = "Create Scenario"
+ru = "Создать сценарий"
+
+[read]
+en = "Read"
+ru = "Читать"

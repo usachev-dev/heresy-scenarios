@@ -1,10 +1,10 @@
 import React, { FC, useContext, useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { FiSettings as SettingsIcon } from "react-icons/fi/index";
-import { Settings } from "./settings";
 import { LangDataStoreContext } from "./lang-data-store-context";
 import { trimEnd } from "lodash-es";
 import { URLSforFILES } from "./urls";
+import logo from "../assets/images/logo-white.png";
 
 const Navbar: FC = () => {
   let l = useContext(LangDataStoreContext);
@@ -106,7 +106,7 @@ const Navbar: FC = () => {
                 to={l.linkToCurrentLang("/")}
                 className={`aic navbar-logo-link`}
               >
-                <img className="navbar-logo-img" alt={t("title")} />
+                <img className="navbar-logo-img" alt={t("title")} src={logo} />
               </Link>
             </div>
             <div className="navbar-item navbar-lang mobile-only">
@@ -131,72 +131,26 @@ const Navbar: FC = () => {
                 target="_blank"
                 onClick={() => setMenuOpen(false)}
                 className={`navbar-item  ${isDownload ? "is-active" : ""}`}
-                to={l.linkToCurrentLang("/rules")}
+                to={l.linkToCurrentLang("/read")}
               >
-                {t("rules")}
+                {t("read")}
               </Link>
-              {/* <Link onClick={() => setMenuOpen(false)} className={`navbar-item  ${isDownload ? 'is-active' : ''}`}*/}
-              {/*      to={l.linkToCurrentLang("/download")}>*/}
-              {/*  {t("download")}*/}
-              {/*</Link>*/}
               <Link
                 onClick={() => setMenuOpen(false)}
                 className={`navbar-item ${isArmies ? "is-active" : ""}`}
-                to={l.linkToCurrentLang("/armies")}
+                to={l.linkToCurrentLang("/build")}
               >
-                {t("armies")}
+                {t("create")}
               </Link>
-              <Link
-                onClick={() => setMenuOpen(false)}
-                className={`navbar-item ${isScenarios ? "is-active" : ""}`}
-                to={l.linkToCurrentLang("/scenarios")}
-              >
-                {t("scenarios")}
-              </Link>
-              <div className="navbar-item navbar-lang desktop-only">
-                {langChange()}
-              </div>
             </div>
           </div>
-
-          <div className="navbar-end is-hidden">
-            <a
-              onClick={openSettings}
-              className="navbar-item"
-              style={{ cursor: "pointer" }}
-            >
-              <SettingsIcon />
-            </a>
+          <div className={`navbar-end`}>
+            <div className="navbar-item navbar-lang desktop-only">
+              {langChange()}
+            </div>
           </div>
         </div>
       </nav>
-
-      <div className={`modal ${showSettings ? "is-active" : ""}`}>
-        <div className="modal-background"></div>
-        <div className="modal-content">
-          <header className="modal-card-head">
-            <p className="modal-card-title">{t("settings")}</p>
-            <button
-              onClick={closeSettings}
-              className="delete"
-              aria-label="close"
-            ></button>
-          </header>
-          <section className="modal-card-body">
-            <Settings />
-          </section>
-          <footer className="modal-card-foot aic is-justify-content-flex-end">
-            <button onClick={closeSettings} className="button">
-              OK
-            </button>
-          </footer>
-        </div>
-        <button
-          onClick={closeSettings}
-          className="modal-close is-large"
-          aria-label="close"
-        ></button>
-      </div>
     </>
   );
 };
