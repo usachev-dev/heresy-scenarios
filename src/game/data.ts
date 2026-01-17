@@ -1,5 +1,11 @@
 export class GameData {}
 
-export let gameData = new GameData();
+interface PrimaryObjective {}
+interface DeploymentType {}
+interface Length {}
 
-export type Localized = string | { en: string; ru: string };
+interface Option {
+  rolls: number[];
+  text: string;
+}
+export let gameData = new GameData();

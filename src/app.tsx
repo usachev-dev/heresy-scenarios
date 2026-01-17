@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/home";
 import Builder from "./routes/buid";
+import Read from "./routes/read";
 import Navbar from "./components/navbar";
 import { makeAutoObservable } from "mobx";
 import LangSelector from "./components/lang-selector";
@@ -31,6 +32,7 @@ const app: FC = () => (
         >
           <Route path={``} element={<Home />} />
           <Route path={`build`} element={<Builder />} />
+          <Route path={`read`} element={<Read />} />
         </Route>
       ))}
     </Routes>

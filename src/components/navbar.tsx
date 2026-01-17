@@ -128,7 +128,6 @@ const Navbar: FC = () => {
           <div className={`navbar-menu ${menuOpen ? "is-active" : ""}`}>
             <div className={`navbar-start`}>
               <Link
-                target="_blank"
                 onClick={() => setMenuOpen(false)}
                 className={`navbar-item  ${isDownload ? "is-active" : ""}`}
                 to={l.linkToCurrentLang("/read")}

@@ -1,6 +1,6 @@
 //@ts-ignore
 import locales from "../assets/locales/locales.toml";
-import { GameData, gameData, Localized } from "../game/data";
+import { GameData, gameData } from "../game/data";
 import { transform, trimEnd, cloneDeep } from "lodash-es";
 //@ts-ignore
 let host = HOST;
@@ -34,7 +34,7 @@ export class LangDataStore {
   constructor() {
     this.lang = defaultLang;
     this.langData = langDataFromLocales(defaultLang);
-    this.gameData = gameDataToLang(defaultLang);
+    this.gameData = new GameData();
   }
 
   setLang(lang: string) {
@@ -44,7 +44,6 @@ export class LangDataStore {
     }
     this.lang = l;
     this.langData = langDataFromLocales(l);
-    this.gameData = gameDataToLang(l);
   }
 
   get otherLangs(): Lang[] {
@@ -68,17 +67,6 @@ export class LangDataStore {
       return result.length > 0 ? result[0] : "";
     }
     return result;
-  }
-
-  localizedAsString(value: Localized): string {
-    if (!value) {
-      return "";
-    }
-    let localized = objectIsLocalized(value);
-    if (localized) {
-      return (localized as any)[defaultLang] as string;
-    }
-    return value as string;
   }
 
   public tlist(key: string): string[] {
@@ -130,40 +118,4 @@ export class LangDataStore {
         return this.linkToLang(path, "en");
     }
   }
-}
-
-function gameDataToLang(lang: Lang): GameData {
-  let g = cloneDeep(gameData);
-  return {};
-}
-
-function objectIsLocalized(o: any): Localized | undefined {
-  if (!o) {
-    return undefined;
-  }
-  if (Object.hasOwn(o, "en") && Object.hasOwn(o, "ru")) {
-    return o;
-  }
-}
-
-function transformLocalizedToStrings<T>(
-  objects: T[],
-  defaultConstructor: () => T,
-  lang: Lang,
-): T[] {
-  // @ts-ignore
-  return objects.map((object) =>
-    transform(
-      object,
-      (result, v, key) => {
-        let localized: any = objectIsLocalized(v);
-        if (localized) {
-          result[key] = localized[lang];
-        } else {
-          result[key] = v;
-        }
-      },
-      defaultConstructor() as any,
-    ),
-  );
 }
