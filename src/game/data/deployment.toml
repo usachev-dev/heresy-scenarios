@@ -1,0 +1,52 @@
+[[deployment]]
+order = 1
+image = "Search and Destroy.png"
+rolls = [1]
+
+[deployment.title]
+en = "Search and Destroy"
+ru = "Search and Destroy"
+
+[deployment.text]
+en = ""
+ru = ""
+
+[[deployment]]
+order = 2
+image = "Crucible of Battle.png"
+rolls = [2]
+
+[deployment.title]
+en = "Crucible of Battle"
+ru = "Crucible of Battle"
+
+[deployment.text]
+en = ""
+ru = ""
+
+
+[[deployment]]
+order = 3
+image = "Hammer and Anvil.png"
+rolls = [3, 4]
+
+[deployment.title]
+en = "Hammer and Anvil"
+ru = "Hammer and Anvil"
+
+[deployment.text]
+en = ""
+ru = ""
+
+[[deployment]]
+order = 4
+image = "Dawn of War.png"
+rolls = [5, 6]
+
+[deployment.title]
+en = "Dawn of War"
+ru = "Dawn of War"
+
+[deployment.text]
+en = ""
+ru = ""

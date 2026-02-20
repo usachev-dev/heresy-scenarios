@@ -1,0 +1,217 @@
+[[special]]
+order = 1
+rolls = [1,2,3,4,5,6]
+
+[special.title]
+en = "Reserves *"
+ru = "Reserves *"
+
+[special.text]
+en = "(Rulebook)"
+ru = "(Rulebook)"
+
+[[special]]
+order = 2
+rolls = [1,2,3,4,5,6]
+
+[special.title]
+en = "Counter Offensive *"
+ru = "Counter Offensive *"
+
+[special.text]
+en = "(Rulebook)"
+ru = "(Rulebook)"
+
+
+[[special]]
+order = 3
+rolls = [2,3,4,5,6]
+
+[special.title]
+en = "Seize the Initiative *"
+ru = "Seize the Initiative *"
+
+[special.text]
+en = "(Rulebook)"
+ru = "(Rulebook)"
+
+
+[[special]]
+order = 4
+rolls = [5,6]
+
+[special.title]
+en = "Low Orbit"
+ru = "Low Orbit"
+
+[special.text]
+en = "Вы можете выводить до 2 отрядов из Deep Strike в ход."
+ru = "Вы можете выводить до 2 отрядов из Deep Strike в ход."
+
+
+
+[[special]]
+order = 5
+rolls = [6]
+
+[special.title]
+en = "Quick Deployment"
+ru = "Quick Deployment"
+
+[special.text]
+en = "Отряды, могут выходить из Deep Strike на первый ход."
+ru = "Отряды, могут выходить из Deep Strike на первый ход."
+
+
+[[special]]
+order = 6
+rolls = [6]
+
+[special.title]
+en = "Aerial Assault"
+ru = "Aerial Assault"
+
+[special.text]
+en = "Отряды не могуть выходить из Deep Strike менее чем в 5\" от отрядов противника. Отряды, вышедшие из Deep Strike, могут совершать disordered charge в тот же ход."
+ru = "Отряды не могуть выходить из Deep Strike менее чем в 5\" от отрядов противника. Отряды, вышедшие из Deep Strike, могут совершать disordered charge в тот же ход."
+
+
+[[special]]
+order = 7
+rolls = [6]
+
+[special.title]
+en = "Rapid Ingress"
+ru = "Rapid Ingress"
+
+[special.text]
+en = "Вы можете вывести один отряд в ход из Deep Strike как реакцию на перемещение в ход противника."
+ru = "Вы можете вывести один отряд в ход из Deep Strike как реакцию на перемещение в ход противника."
+
+
+[[special]]
+order = 8
+rolls = [6]
+
+[special.title]
+en = "Night Fight"
+ru = "Night Fight"
+
+[special.text]
+en = "Игра начинается ночью. В конце хода второго игрока, он кидает кубик, на 3+ ночь заканчивается. Пока продолжается ночь, вся стрельба дальше 12\" делается снап-шотами."
+ru = "Игра начинается ночью. В конце хода второго игрока, он кидает кубик, на 3+ ночь заканчивается. Пока продолжается ночь, вся стрельба дальше 12\" делается снап-шотами."
+
+
+[[special]]
+order = 9
+rolls = [6]
+
+[special.title]
+en = "Escalation"
+ru = "Escalation"
+
+[special.text]
+en = "В начале игры каждый игрок может выставить на стол не более одного персонажа типа infantry, 2 отрядов категории troops и 1 отряда категории support. Все остальные войска обязаны начинать игру в резерве."
+ru = "В начале игры каждый игрок может выставить на стол не более одного персонажа типа infantry, 2 отрядов категории troops и 1 отряда категории support. Все остальные войска обязаны начинать игру в резерве."
+
+
+[[special]]
+order = 10
+rolls = [6]
+
+[special.title]
+en = "Emperor's Teeth"
+ru = "Emperor's Teeth"
+
+[special.text]
+en = "Противник не может попадать в ближнем бою по моделям, вооруженным chain-оружием, лучше чем на 4+."
+ru = "Противник не может попадать в ближнем бою по моделям, вооруженным chain-оружием, лучше чем на 4+."
+
+
+[[special]]
+order = 11
+rolls = [6]
+
+[special.title]
+en = "Last stand"
+ru = "Last stand"
+
+[special.text]
+en = "Отряды, подверженные статусам, помимо broken, могут скорить точки, но теряют line."
+ru = "Отряды, подверженные статусам, помимо broken, могут скорить точки, но теряют line."
+
+
+
+[[special]]
+order = 12
+rolls = [5,6]
+
+[special.title]
+en = "Open ground"
+ru = "Open ground"
+
+[special.text]
+en = "Кавалерия может скорить основные цели."
+ru = "Кавалерия может скорить основные цели."
+
+
+
+[[special]]
+order = 13
+rolls = [5,6]
+
+[special.title]
+en = "Cityfight"
+ru = "Cityfight"
+
+[special.text]
+en = "Новый тип ландшафта: руины. Дают пехоте 4+ укрытие. Непроходимы для техники. Сложный и опасный ландшафт для кавалерии. Линии видимости, начавшиеся снаружи руины, не могут покинуть руину."
+ru = "Новый тип ландшафта: руины. Дают пехоте 4+ укрытие. Непроходимы для техники. Сложный и опасный ландшафт для кавалерии. Линии видимости, начавшиеся снаружи руины, не могут покинуть руину."
+
+
+
+
+[[special]]
+order = 14
+rolls = [6]
+
+[special.title]
+en = "Jagged Alliance"
+ru = "Jagged Alliance"
+
+[special.text]
+en = "Все отряды из allied-детачментов получают -2 к ментальным характеристикам."
+ru = "Все отряды из allied-детачментов получают -2 к ментальным характеристикам."
+
+
+
+
+
+[[special]]
+order = 15
+rolls = [6]
+
+[special.title]
+en = "Brutal Attack"
+ru = "Brutal Attack"
+
+[special.text]
+en = "Успешно совершив нападение, кроме disordered, модели получают +1 атаку в первом раунде боя."
+ru = "Успешно совершив нападение, кроме disordered, модели получают +1 атаку в первом раунде боя."
+
+
+
+[[special]]
+order = 16
+rolls = [5, 6]
+
+[special.title]
+en = "Stand your ground"
+ru = "Stand your ground"
+
+[special.text]
+en = "Отряды в радиусе контроля основных целей не могут использовать реакции перемещения."
+ru = "Отряды в радиусе контроля основных целей не могут использовать реакции перемещения."
+
+
+

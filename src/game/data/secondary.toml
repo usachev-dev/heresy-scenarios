@@ -1,0 +1,158 @@
+[[secondary]]
+order = 1
+rolls = [2,3,4,5,6]
+
+[secondary.title]
+en = "Slay the warlord * (3)"
+ru = "Slay the warlord * (3)"
+
+[secondary.text]
+en = "Игрок получает 3 победных очка, уничтожив персонажа из слота HQ. (Rulebook)"
+ru = "Игрок получает 3 победных очка, уничтожив персонажа из слота HQ. (Rulebook)"
+
+[[secondary]]
+order = 2
+rolls = [2,3,4,5,6]
+
+[secondary.title]
+en = "Giant Killer * (2)"
+ru = "Giant Killer * (2)"
+
+[secondary.text]
+en = "Игрок получает 2 победных очка, уничтожив сверхтяжелый отряд. (Rulebook)"
+ru = "Игрок получает 2 победных очка, уничтожив сверхтяжелый отряд. (Rulebook)"
+
+[[secondary]]
+order = 3
+rolls = [2,3,4,5,6]
+
+[secondary.title]
+en = "First Strike * (2)"
+ru = "First Strike * (2)"
+
+[secondary.text]
+en = "Игрок получает 2 победных очка, уничтожив отряд противника в первом игровом раунде. (Rulebook)"
+ru = "Игрок получает 2 победных очка, уничтожив отряд противника в первом игровом раунде. (Rulebook)"
+
+[[secondary]]
+order = 4
+rolls = [2,3,4,5,6]
+
+[secondary.title]
+en = "Decapitation (3)"
+ru = "Decapitation (3)"
+
+[secondary.text]
+en = "Игрок получает 3 победных очка в конце игры, если у противника нет персонажа из слота HQ"
+ru = "Игрок получает 3 победных очка в конце игры, если у противника нет персонажа из слота HQ"
+
+[[secondary]]
+order = 5
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Area control (3)"
+ru = "Area control (3)"
+
+[secondary.text]
+en = "Игрок получает 3 победных очка в конце хода, если контролирует не менее 3 целей и больше целей, чем противник."
+ru = "Игрок получает 3 победных очка в конце хода, если контролирует не менее 3 целей и больше целей, чем противник."
+
+[[secondary]]
+order = 6
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Objective secure (1)"
+ru = "Objective secure (1)"
+
+[secondary.text]
+en = "Игрок получает 1 победное очко за каждую цель, контролируемую в начале хода."
+ru = "Игрок получает 1 победное очко за каждую цель, контролируемую в начале хода."
+
+
+[[secondary]]
+order = 7
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Killing ground (1)"
+ru = "Killing ground (1)"
+
+[secondary.text]
+en = "Игрок получает 1 победное очко за каждый уничтоженный вражеский отряд."
+ru = "Игрок получает 1 победное очко за каждый уничтоженный вражеский отряд."
+
+
+[[secondary]]
+order = 8
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Martial Pride (2)"
+ru = "Martial Pride (2)"
+
+[secondary.text]
+en = "Игрок получает 2 победных очка за каждую модель противника, убитую в поединке."
+ru = "Игрок получает 2 победных очка за каждую модель противника, убитую в поединке."
+
+[[secondary]]
+order = 9
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Engine Killer (1)"
+ru = "Engine Killer (1)"
+
+[secondary.text]
+en = "Игрок получает 1 победное очко за каждые полные 4HP у уничтоженных им единиц техники."
+ru = "Игрок получает 1 победное очко за каждые полные 4HP у уничтоженных им единиц техники."
+
+[[secondary]]
+order = 10
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Combat Glory (2)"
+ru = "Combat Glory (2)"
+
+[secondary.text]
+en = "Игрок получает 2 победных очка за каждую победу в ближнем бою."
+ru = "Игрок получает 2 победных очка за каждую победу в ближнем бою."
+
+[[secondary]]
+order = 11
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Behind enemy lines (2)"
+ru = "Behind enemy lines (2)"
+
+[secondary.text]
+en = "В конце вашего хода получите 2 очка за каждый ваш отряд в зоне расстановки противника."
+ru = "В конце вашего хода получите 2 очка за каждый ваш отряд в зоне расстановки противника."
+
+[[secondary]]
+order = 12
+rolls = [4,5,6]
+
+[secondary.title]
+en = "Engage on all fronts (1)"
+ru = "Engage on all fronts (1)"
+
+[secondary.text]
+en = "В начале вашего хода, получите одно победное очко за каждую четверть стола, которую вы контролируете."
+ru = "В начале вашего хода, получите одно победное очко за каждую четверть стола, которую вы контролируете."
+
+
+[[secondary]]
+order = 13
+rolls = [4,5,6]
+
+[secondary.title]
+en = "SECURE NO MAN’S LAND (2)"
+ru = "SECURE NO MAN’S LAND (2)"
+
+[secondary.text]
+en = "В начале вашего хода получите два победных очка, если контролируете территорию вне зон расстановки."
+ru = "В начале вашего хода получите два победных очка, если контролируете территорию вне зон расстановки."

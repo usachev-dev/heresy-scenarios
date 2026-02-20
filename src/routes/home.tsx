@@ -3,6 +3,7 @@ import Img from "../components/img";
 import { Link } from "react-router-dom";
 import { LangDataStoreContext } from "../components/lang-data-store-context";
 import { URLSforFILES } from "../components/urls";
+import Read from "./read";
 
 const Home: FC = () => {
   let l = useContext(LangDataStoreContext);
@@ -36,6 +37,7 @@ const Home: FC = () => {
           </div>
         </div>
       </div>
+      <Read />
     </>
   );
 };

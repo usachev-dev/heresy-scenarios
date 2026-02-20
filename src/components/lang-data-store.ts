@@ -1,6 +1,6 @@
 //@ts-ignore
 import locales from "../assets/locales/locales.toml";
-import { GameData, gameData } from "../game/data";
+import {GameData, GameDataStore, GameDataStr} from "../game/data";
 import { transform, trimEnd, cloneDeep } from "lodash-es";
 //@ts-ignore
 let host = HOST;
@@ -26,15 +26,20 @@ function langDataFromLocales(lang: Lang): Record<string, string> {
   );
 }
 
+
 export class LangDataStore {
   public lang: Lang = defaultLang;
   public langData: Record<string, string | string[]>;
-  public gameData: GameData;
+  private _gameData: GameDataStore;
+
+  public get gameData(): GameDataStr {
+    return this._gameData.localized(this.lang);
+  }
 
   constructor() {
     this.lang = defaultLang;
     this.langData = langDataFromLocales(defaultLang);
-    this.gameData = new GameData();
+    this._gameData = new GameDataStore();
   }
 
   setLang(lang: string) {

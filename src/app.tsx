@@ -11,7 +11,6 @@ import { LangDataStore } from "./components/lang-data-store";
 import Helmet from "./components/helmet";
 
 let baseUrl = import.meta.env.BASE_URL;
-console.log("baseUrl is", baseUrl);
 
 const app: FC = () => (
   <LangDataStoreContext.Provider
