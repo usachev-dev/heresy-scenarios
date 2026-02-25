@@ -31,6 +31,24 @@ let firebaseConf = {
   }
 }
 
+
+firebaseConf.hosting.rewrites = [...routesToPrerender.map(r => ({
+  source: r,
+  destination: `${r === "/" ? "index" : r}.html`
+})),
+  ...[
+    "logo.png",
+    "robots.txt",
+  ].map(fileName => ({
+    "source": `/${fileName}`,
+    "destination": `/public/${fileName}`
+  })),
+  {
+    source: "**",
+    destination: "/client/index.html"
+  }
+]
+
 fs.writeFileSync("./firebase.json", JSON.stringify(firebaseConf, null, 2));
 
 

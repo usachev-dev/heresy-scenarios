@@ -8,8 +8,40 @@
     ],
     "rewrites": [
       {
+        "source": "/",
+        "destination": "index.html"
+      },
+      {
+        "source": "/read",
+        "destination": "/read.html"
+      },
+      {
+        "source": "/en/",
+        "destination": "/en/.html"
+      },
+      {
+        "source": "/en/read",
+        "destination": "/en/read.html"
+      },
+      {
+        "source": "/ru/",
+        "destination": "/ru/.html"
+      },
+      {
+        "source": "/ru/read",
+        "destination": "/ru/read.html"
+      },
+      {
+        "source": "/logo.png",
+        "destination": "/public/logo.png"
+      },
+      {
+        "source": "/robots.txt",
+        "destination": "/public/robots.txt"
+      },
+      {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/client/index.html"
       }
     ]
   }
