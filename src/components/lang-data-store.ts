@@ -1,6 +1,6 @@
 //@ts-ignore
 import locales from "../assets/locales/locales.toml";
-import {GameData, GameDataStore, GameDataStr} from "../game/data";
+import {GameDataLocalized, GameDataStore, GameData} from "../game/data";
 import { transform, trimEnd, cloneDeep } from "lodash-es";
 //@ts-ignore
 let host = HOST;
@@ -32,7 +32,7 @@ export class LangDataStore {
   public langData: Record<string, string | string[]>;
   private _gameData: GameDataStore;
 
-  public get gameData(): GameDataStr {
+  public get gameData(): GameData {
     return this._gameData.localized(this.lang);
   }
 

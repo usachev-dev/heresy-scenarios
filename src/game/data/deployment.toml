@@ -1,5 +1,5 @@
 [[deployment]]
-order = 1
+id =  1
 image = "Search and Destroy.png"
 rolls = [1]
 
@@ -12,7 +12,7 @@ en = ""
 ru = ""
 
 [[deployment]]
-order = 2
+id =  2
 image = "Crucible of Battle.png"
 rolls = [2]
 
@@ -26,7 +26,7 @@ ru = ""
 
 
 [[deployment]]
-order = 3
+id =  3
 image = "Hammer and Anvil.png"
 rolls = [3, 4]
 
@@ -39,7 +39,7 @@ en = ""
 ru = ""
 
 [[deployment]]
-order = 4
+id =  4
 image = "Dawn of War.png"
 rolls = [5, 6]
 

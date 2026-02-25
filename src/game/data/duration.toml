@@ -1,5 +1,5 @@
 [[duration]]
-order = 1
+id =  1
 rolls = [1,2,3,4]
 
 [duration.title]
@@ -7,7 +7,7 @@ en = "4 хода"
 ru = "4 хода"
 
 [[duration]]
-order = 2
+id =  2
 rolls = [5]
 
 [duration.title]
@@ -15,7 +15,7 @@ en = "5 ходов"
 ru = "5 ходов"
 
 [[duration]]
-order = 3
+id =  3
 rolls = [6]
 
 [duration.title]

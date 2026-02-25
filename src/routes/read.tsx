@@ -1,7 +1,7 @@
 import React, {FC, useContext} from "react";
 import Img from "../components/img";
 import {LangDataStoreContext} from "../components/lang-data-store-context";
-import {OptionStr} from "../game/data";
+import {OptionComponent} from "../components/option";
 
 const Read: FC = () => {
   let l = useContext(LangDataStoreContext);
@@ -17,36 +17,29 @@ const Read: FC = () => {
       <h2>{t("deploymentTypeTitle")}</h2>
       <p>{t("deploymentTypeSubtitle")}</p>
       {
-        gameData.deploymentTypes.map(Option)
+        gameData.deploymentTypes.map(o => <OptionComponent option={o} />)
       }
       <h2>{t("primaryTitle")}</h2>
       {
-        gameData.primaryObjectives.map(Option)
+        gameData.primaryObjectives.map(o => <OptionComponent option={o} />)
       }
       <h2>{t("durationTitle")}</h2>
       {
-        gameData.duration.map(Option)
+        gameData.duration.map(o => <OptionComponent option={o} />)
       }
       <h2>{t("secondaryTitle")}</h2>
       <p>{t("secondarySubtitle")}</p>
       {
-        gameData.secondaryObjectives.map(Option)
+        gameData.secondaryObjectives.map(o => <OptionComponent option={o} />)
       }
       <h2>{t("specialTitle")}</h2>
       {
-        gameData.special.map(Option)
+        gameData.special.map(o => <OptionComponent option={o} />)
       }
 
     </main>
   );
 };
 
-const Option: FC<OptionStr> = (o) => {
-  return <div key={o.order}>
-    <h5>{o.order}.&nbsp;{o.title}:&nbsp;{o.rollsText}</h5>
-    {o.image ? <Img src={o.image} style={{maxWidth: 800}}/> : <></>}
-    <p>{o.text}</p>
-  </div>
-}
 
 export default Read;

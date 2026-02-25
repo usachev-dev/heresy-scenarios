@@ -111,15 +111,15 @@ const Navbar: FC = () => {
             <div className={`navbar-menu ${menuOpen ? "is-active" : ""}`}>
               <Link
                 onClick={() => setMenuOpen(false)}
-                className={`navbar-item  ${isDownload ? "is-active" : ""}`}
+                className={`navbar-item`}
                 to={l.linkToCurrentLang("/read")}
               >
                 {t("read")}
               </Link>
               <Link
                 onClick={() => setMenuOpen(false)}
-                className={`navbar-item ${isArmies ? "is-active" : ""}`}
-                to={l.linkToCurrentLang("/build")}
+                className={`navbar-item`}
+                to={l.linkToCurrentLang("/random")}
               >
                 {t("create")}
               </Link>

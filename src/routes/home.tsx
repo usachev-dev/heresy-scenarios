@@ -27,7 +27,7 @@ const Home: FC = () => {
                   {t("read")}
                 </Link>
                 <Link
-                  to={l.linkToCurrentLang(`/build`)}
+                  to={l.linkToCurrentLang(`/random`)}
                   className={`button is-light is-medium`}
                 >
                   {t("create")}

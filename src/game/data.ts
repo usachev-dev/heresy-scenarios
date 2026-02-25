@@ -8,7 +8,7 @@ import Duration from "./data/duration.toml";
 import Special from "./data/special.toml";
 //@ts-ignore
 import Secondary from "./data/secondary.toml";
-import {cloneDeep, isEqual, sortBy} from "lodash-es";
+import {cloneDeep, isEqual, sortBy, shuffle} from "lodash-es";
 
 type Localized = {
   en: string;
@@ -39,9 +39,9 @@ function objectRemoveLocalized(object: any, lang: "ru" | "en"): any {
   return obj;
 }
 
-function ensureOption(v: unknown): Option {
-  let result: Option = {
-    order: 0,
+function ensureOption(v: unknown): OptionLocalized {
+  let result: OptionLocalized = {
+    id: 0,
     image: "",
     rolls: [],
     title: { en: "", ru: "" },
@@ -50,8 +50,12 @@ function ensureOption(v: unknown): Option {
 
   if (typeof v === "object" && !!v) {
     let val = v as any
+    let id = result.id
+    if (typeof val["id"] === "number") {
+      id = val["id"]
+    }
     result = {
-      order: val["order"] || result.order,
+      id: id,
       image: val["image"] || result.image,
       rolls:val["rolls"] || result.rolls,
       title: val["title"] || result.title,
@@ -62,8 +66,8 @@ function ensureOption(v: unknown): Option {
   return result;
 }
 
-function ensureOptions(v: unknown): Option[] {
-  let result: Option[] = [];
+function ensureOptions(v: unknown): OptionLocalized[] {
+  let result: OptionLocalized[] = [];
 
   if (Array.isArray(v)) {
     result = v.map(ensureOption);
@@ -72,12 +76,29 @@ function ensureOptions(v: unknown): Option[] {
   return result;
 }
 
-interface Option {
-  order: number;
+export interface OptionLocalized {
+  id: number;
   image?: string;
   rolls: number[];
   title: Localized;
   text?: Localized;
+}
+
+export interface GameDataLocalized {
+  deploymentTypes: OptionLocalized[],
+  primaryObjectives: OptionLocalized[],
+  secondaryObjectives: OptionLocalized[],
+  duration: OptionLocalized[],
+  special: OptionLocalized[],
+}
+
+export interface Option {
+  id: number;
+  image?: string;
+  rolls: number[];
+  rollsText: string;
+  title: string;
+  text: string;
 }
 
 export interface GameData {
@@ -86,23 +107,6 @@ export interface GameData {
   secondaryObjectives: Option[],
   duration: Option[],
   special: Option[],
-}
-
-export interface OptionStr {
-  order: number;
-  image?: string;
-  rolls: number[];
-  rollsText: string;
-  title: string;
-  text: string;
-}
-
-export interface GameDataStr {
-  deploymentTypes: OptionStr[],
-  primaryObjectives: OptionStr[],
-  secondaryObjectives: OptionStr[],
-  duration: OptionStr[],
-  special: OptionStr[],
 }
 
 export function rollsToText(rolls: number[], lang: "en" | "ru"): string {
@@ -145,18 +149,18 @@ export function rollsToText(rolls: number[], lang: "en" | "ru"): string {
 
 
 export class GameDataStore {
-  private _gameData: GameData;
+  private _gameData: GameDataLocalized;
   constructor() {
     this._gameData = {
-      deploymentTypes: sortBy(ensureOptions(Deployment.deployment), o => o.order),
-      primaryObjectives: sortBy(ensureOptions(Primary.primary), o => o.order),
-      secondaryObjectives: sortBy(ensureOptions(Secondary.secondary), o => o.order),
-      duration: sortBy(ensureOptions(Duration.duration), o => o.order),
-      special: sortBy(ensureOptions(Special.special), o => o.order),
+      deploymentTypes: sortBy(ensureOptions(Deployment.deployment), o => o.id),
+      primaryObjectives: sortBy(ensureOptions(Primary.primary), o => o.id),
+      duration: sortBy(ensureOptions(Duration.duration), o => o.id),
+      secondaryObjectives: sortBy(ensureOptions(Secondary.secondary), o => o.id),
+      special: sortBy(ensureOptions(Special.special), o => o.id),
     };
   }
 
-  localized(lang: "ru" | "en"): GameDataStr {
+  localized(lang: "ru" | "en"): GameData {
     return {
       deploymentTypes: this._gameData.deploymentTypes.map(o => objectRemoveLocalized(o, lang)),
       primaryObjectives: this._gameData.primaryObjectives.map(o => objectRemoveLocalized(o, lang)),

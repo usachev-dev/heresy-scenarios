@@ -8,7 +8,9 @@ const Builder: FC = () => {
   let t = (s: string): string => l.t(s);
 
   return (
-    <main className="container main container is-max-desktop">BUILDER</main>
+    <main className="container main container">
+
+    </main>
   );
 };
 export default Builder;
