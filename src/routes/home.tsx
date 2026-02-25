@@ -14,11 +14,11 @@ const Home: FC = () => {
       <div className="homepage-hero">
         <Img className={`img-bg`} src={"art/cover.jpg"} alt={t("title")} />
         <div className={`bg-darken`} />
-        <div className="container is-max-desktop">
+        <div className="container">
           <div className="homepage-hero-content">
             <div className="home-text">
               <h1 className="homepage-title title">{t("title")}</h1>
-              <p className="subtitle">{t("description")}</p>
+              <p className="homepage-subtitle">{t("description")}</p>
               <div className={`home-buttons`}>
                 <Link
                   to={l.linkToCurrentLang(`/read`)}
@@ -27,7 +27,7 @@ const Home: FC = () => {
                   {t("read")}
                 </Link>
                 <Link
-                  to={l.linkToCurrentLang(`/create`)}
+                  to={l.linkToCurrentLang(`/build`)}
                   className={`button is-light is-medium`}
                 >
                   {t("create")}

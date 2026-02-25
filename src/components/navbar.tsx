@@ -1,9 +1,7 @@
-import React, { FC, useContext, useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
-import { FiSettings as SettingsIcon } from "react-icons/fi/index";
-import { LangDataStoreContext } from "./lang-data-store-context";
-import { trimEnd } from "lodash-es";
-import { URLSforFILES } from "./urls";
+import React, {FC, useContext, useEffect, useState} from "react";
+import {Link, useLocation, useParams} from "react-router-dom";
+import {LangDataStoreContext} from "./lang-data-store-context";
+import {trimEnd} from "lodash-es";
 import logo from "../assets/images/logo-white.png";
 
 const Navbar: FC = () => {
@@ -71,7 +69,7 @@ const Navbar: FC = () => {
   let langChange = () => (
     <>
       <div onClick={toggleLangOpen} className="navbar-lang-content">
-        {langDataStore.lang}&nbsp;<span style={{ fontSize: "0.7em" }}>▼</span>
+        {langDataStore.lang}&nbsp;<span style={{fontSize: "0.7em"}}>▼</span>
       </div>
       <div className={`navbar-lang-menu ${langOpen ? "" : "is-hidden"}`}>
         {langDataStore.otherLangs.map((other) => (
@@ -94,39 +92,23 @@ const Navbar: FC = () => {
         className={`navbar ${isNavbarTransparent ? "navbar-transparent" : "is-primary"}`}
       >
         <div
-          className="container is-max-desktop"
-          style={{ overflow: "visible" }}
+          className="container is-max-desktop navbar-content "
+          style={{overflow: "visible"}}
         >
-          <div className={`navbar-brand `}>
-            <div></div>
-            <div
-              className={`aic navbar-brand-logo ${isNavbarTransparent ? "navbar-brand-logo-hidden" : ""}`}
-            >
-              <Link
-                to={l.linkToCurrentLang("/")}
-                className={`aic navbar-logo-link`}
+          <div className="navbar-start">
+            <div className={`navbar-brand `}>
+              <div
+                className={`aic navbar-brand-logo ${isNavbarTransparent ? "navbar-brand-logo-hidden" : ""}`}
               >
-                <img className="navbar-logo-img" alt={t("title")} src={logo} />
-              </Link>
+                <Link
+                  to={l.linkToCurrentLang("/")}
+                  className={`aic navbar-logo-link`}
+                >
+                  <img className="navbar-logo-img" alt={t("title")} src={logo}/>
+                </Link>
+              </div>
             </div>
-            <div className="navbar-item navbar-lang mobile-only">
-              {langChange()}
-            </div>
-            <a
-              role="button"
-              onClick={toggleMenu}
-              className={`navbar-burger ${menuOpen ? "is-active" : ""}`}
-              aria-label="menu"
-              aria-expanded="false"
-              data-target="navbarBasicExample"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div className={`navbar-menu ${menuOpen ? "is-active" : ""}`}>
-            <div className={`navbar-start`}>
+            <div className={`navbar-menu ${menuOpen ? "is-active" : ""}`}>
               <Link
                 onClick={() => setMenuOpen(false)}
                 className={`navbar-item  ${isDownload ? "is-active" : ""}`}
@@ -144,7 +126,7 @@ const Navbar: FC = () => {
             </div>
           </div>
           <div className={`navbar-end`}>
-            <div className="navbar-item navbar-lang desktop-only">
+            <div className="navbar-item navbar-lang">
               {langChange()}
             </div>
           </div>

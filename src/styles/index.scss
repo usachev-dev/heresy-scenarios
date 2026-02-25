@@ -1,11 +1,9 @@
 //@import "./bamboo.min.css";
 
-@import "bulma/sass/utilities/initial-variables";
-@import "bulma/sass/utilities/functions";
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300..800&display=swap');
 @import "colors";
-@import "bulma/sass/utilities/derived-variables";
-@import "bulma/bulma";
+@import "style.css";
+@import "navbar";
 
 body,
 button,
@@ -15,7 +13,7 @@ select,
 textarea,
 html {
     @media screen {
-        color: $black;
+        color: $text;
     }
     @media print {
         color: black;
@@ -54,35 +52,16 @@ body {
 }
 
 .container {
+    margin: auto;
+    max-width: 960px;
+    min-width: 100%;
     overflow: hidden;
     @media screen and (min-width: 769px) {
         overflow: visible;
     }
-}
-
-.content ul,
-.pointed-list {
-    list-style: none !important;
-
-    li {
-        margin-bottom: 0.25em;
+    @media screen and (min-width: 960px) {
+        min-width: 960px;
     }
-}
-
-.content h4 {
-    margin-top: 1.6em;
-}
-
-.content h3 {
-    margin-top: 1.3em;
-}
-
-.content h2 {
-    margin-top: 1em;
-}
-
-.content h1 {
-    margin-top: 1em;
 }
 
 .button.is-text {
@@ -168,129 +147,6 @@ button,
     font-weight: 700;
 }
 
-.navbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    opacity: 1;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-    background: $primary;
-    color: $primary-invert;
-    height: 50px;
-    @media print {
-        display: none;
-    }
-    @media screen and (min-width: 769px) {
-        font-size: 16px;
-        height: 60px;
-    }
-
-    .navbar-item,
-    .navbar-link,
-    .navbar-burger {
-        color: $primary-invert;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-
-        &:active,
-        &:focus {
-            background: transparent;
-            color: $primary-invert;
-        }
-    }
-
-    z-index: 900;
-
-    transition:
-        color 0.2s 0.1s,
-        background-color 0.2s 0.1s;
-}
-
-.navbar-burger {
-    height: 50px;
-    @media screen and (min-width: 769px) {
-        height: 60px;
-    }
-}
-
-.navbar-brand {
-    align-items: center;
-}
-
-.navbar-logo-img {
-}
-
-@media screen and (min-width: 1024px) {
-    .navbar > .container .navbar-brand,
-    .container > .navbar .navbar-brand {
-        margin-left: 0;
-    }
-}
-
-.navbar-logo-link {
-}
-
-.navbar-transparent {
-    box-shadow: none;
-    background: linear-gradient(
-        180deg,
-        rgba(11, 10, 10, 0.4) -7.27%,
-        rgba(0, 0, 0, 0.312) 40.1%,
-        rgba(11, 10, 10, 0) 190.45%
-    );
-
-    .navbar-item,
-    .navbar-link {
-        color: $primary-invert;
-    }
-
-    .navbar-item:hover {
-        color: $primary-invert;
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    @media screen and (max-width: 1023px) {
-        .navbar-menu.is-active,
-        .navbar-item {
-            color: $text;
-        }
-    }
-    @media screen and (max-width: 1023px) {
-        .navbar-lang-content {
-            color: $primary-invert;
-        }
-    }
-}
-
-.navbar-brand-logo {
-    transition:
-        opacity 0.2s 0.2s,
-        width 0.2s;
-    height: 100%;
-    opacity: 1;
-    width: 50px;
-    @media screen and (min-width: 768px) {
-        width: 100px;
-    }
-}
-
-.navbar-brand-logo-hidden {
-    width: 0;
-    opacity: 0;
-}
-
-.navbar-item {
-    padding: 0.5rem 1.75rem;
-}
-
-.navbar .navbar-item {
-    @media screen and (max-width: 1024px) {
-        color: $text;
-    }
-}
-
 .main {
     @media screen {
         margin-top: 50px;
@@ -313,7 +169,7 @@ button,
 
 .homepage-hero {
     width: 100%;
-    min-height: 90vh;
+    height: 90vh;
     position: relative;
     @media screen and (min-width: 769px) {
         padding-top: 60px;
@@ -349,18 +205,13 @@ button,
     color: $gold;
     display: flex;
     align-items: center;
-    font-size: 60px;
-    line-height: 50px;
     font-weight: 400;
-    flex-direction: column;
     margin-top: 100px;
-    margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        font-size: 80px;
-        line-height: 100px;
-        margin-bottom: 0;
-    }
+
+    flex-direction: row;
+    font-size: 80px;
+    line-height: 100px;
+    margin-bottom: 0;
     //text-transform: uppercase;
     @media screen and (min-width: 1330px) {
         font-size: 90px;
@@ -375,6 +226,13 @@ button,
     }
 }
 
+.homepage-hero-content {
+    z-index: 999;
+    display: block;
+    position: relative;
+    color: $white;
+}
+
 .home-text {
     margin-top: -50px;
     @media screen and (min-width: 769px) {
@@ -386,7 +244,7 @@ button,
     @media screen and (max-width: 1024px) {
         padding: 0 2rem;
     }
-    .subtitle {
+    .homepage-title {
         color: rgba($gold, 0.95);
     }
 }
@@ -420,8 +278,19 @@ button,
     justify-content: center;
     flex-direction: column;
     //text-transform: uppercase;
-    .button.is-text:hover {
-        background: rgba(255, 255, 255, 0.25);
+    .button {
+        height: 60px;
+        padding: 0em 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        background: $primary;
+        line-height: 60px;
+        text-align: center;
+    }
+    .button:hover {
+        background: $black;
     }
     .button {
         width: auto;
@@ -573,4 +442,23 @@ img {
 
 h4, h5, .content h4, .content h5  {
     font-weight: 500;
+}
+
+.is-hidden {
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25em;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-weight: 700;
 }

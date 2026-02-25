@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
+// @ts-ignore
 import reactPlugin from '@vitejs/plugin-react';
-import analyze from 'rollup-plugin-analyzer';
-import { imagetools } from 'vite-imagetools'
+import {imagetools} from 'vite-imagetools'
 import svgLoader from 'vite-svg-loader'
-import { ViteToml } from 'vite-plugin-toml';
+import {ViteToml} from 'vite-plugin-toml';
 // @ts-ignore
 import mdLoader, {Mode} from 'vite-plugin-markdown';
 
@@ -38,7 +38,8 @@ export default defineConfig({
   css: {
     modules: {
       localsConvention: 'camelCase'
-    }
+    },
+    preprocessorOptions: {scss: {api: 'modern-compiler', silenceDeprecations: ['import', 'global-builtin']}}
   },
   build: {
     target: 'esnext',
