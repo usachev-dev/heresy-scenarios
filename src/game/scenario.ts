@@ -48,9 +48,6 @@ export function URLParamsToSavedScenario(params: URLSearchParams): SavedScenario
   let sParam = params.getAll("s") || ["1"];
   let spParam = params.getAll("sp") || ["1"];
 
-  console.log(params)
-  console.log(params.getAll("s"))
-
   return {
     d: Number.parseInt(dParam),
     p: Number.parseInt(pParam),
@@ -72,7 +69,6 @@ export function randomScenario(gameData: GameData): Scenario {
 
 export class Scenario {
   constructor(private gameData: GameData, private saved: SavedScenario) {
-    console.log('saved', saved)
     this.id = saved.id || Date.now();
     this.name = saved.name || "Новый сценарий";
     this.deployment = gameData.deploymentTypes.find(dt => dt.id === saved.d) || gameData.deploymentTypes[0];
@@ -82,7 +78,6 @@ export class Scenario {
     this.secondaries = uniqBy(saved.s.map((id, index) => gameData.secondaryObjectives.find(dt => dt.id === id)), o => o.id)
     //@ts-ignore
     this.specials = uniqBy(saved.sp.map((id, index) => gameData.special.find(dt => dt.id === id)), o => o.id);
-    console.log('getSaved', this.getSaved())
   }
 
   id: number;
@@ -136,7 +131,7 @@ export class Scenario {
     this.duration = this.gameData.deploymentTypes.find(d => includes(d.rolls, durRoll)) || this.deployment;
 
     this.secondaries = fillUpTo(d3() + d3(), shuffleWithSomeStuck(this.gameData.secondaryObjectives, 3));
-    this.specials = fillUpTo(d3() + d3(), shuffleWithSomeStuck(this.gameData.special, 3));
+    this.specials = fillUpTo(d3() + d3() + 1, shuffleWithSomeStuck(this.gameData.special, 3));
   }
 
 }

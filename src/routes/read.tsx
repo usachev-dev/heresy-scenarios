@@ -17,24 +17,24 @@ const Read: FC = () => {
       <h2>{t("deploymentTypeTitle")}</h2>
       <p>{t("deploymentTypeSubtitle")}</p>
       {
-        gameData.deploymentTypes.map(o => <OptionComponent option={o} />)
+        gameData.deploymentTypes.map((o, i) => <OptionComponent option={o} key={i}/>)
       }
       <h2>{t("primaryTitle")}</h2>
       {
-        gameData.primaryObjectives.map(o => <OptionComponent option={o} />)
+        gameData.primaryObjectives.map((o, i) => <OptionComponent option={o} key={i}/>)
       }
       <h2>{t("durationTitle")}</h2>
       {
-        gameData.duration.map(o => <OptionComponent option={o} />)
+        gameData.duration.map((o, i) => <OptionComponent option={o} key={i}/>)
       }
       <h2>{t("secondaryTitle")}</h2>
       <p>{t("secondarySubtitle")}</p>
       {
-        gameData.secondaryObjectives.map(o => <OptionComponent option={o} />)
+        gameData.secondaryObjectives.map((o, i) => <OptionComponent option={o} key={i}/>)
       }
       <h2>{t("specialTitle")}</h2>
       {
-        gameData.special.map(o => <OptionComponent option={o} />)
+        gameData.special.map((o, i) => <OptionComponent option={o} key={i}/>)
       }
 
     </main>

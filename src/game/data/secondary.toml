@@ -4,10 +4,10 @@ rolls = [2,3,4,5,6]
 
 [secondary.title]
 en = "Decapitation (3)"
-ru = "Decapitation (3)"
+ru = "Обезглавливание (3)"
 
 [secondary.text]
-en = "Игрок получает 3 победных очка в конце игры, если у противника нет персонажа из слота HQ"
+en = "The player receives 3 victory points if at the end of the game the opponent has no character from an HQ slot."
 ru = "Игрок получает 3 победных очка в конце игры, если у противника нет персонажа из слота HQ"
 
 [[secondary]]
@@ -16,10 +16,10 @@ rolls = [2,3,4,5,6]
 
 [secondary.title]
 en = "Giant Killer * (2)"
-ru = "Giant Killer * (2)"
+ru = "Убийца гигантов * (2)"
 
 [secondary.text]
-en = "Игрок получает 2 победных очка, уничтожив сверхтяжелый отряд. (Rulebook)"
+en = "The player receives 2 victory points for destroying a super-heavy unit. (Rulebook)"
 ru = "Игрок получает 2 победных очка, уничтожив сверхтяжелый отряд. (Rulebook)"
 
 [[secondary]]
@@ -28,10 +28,10 @@ rolls = [2,3,4,5,6]
 
 [secondary.title]
 en = "First Strike * (2)"
-ru = "First Strike * (2)"
+ru = "Первый удар * (2)"
 
 [secondary.text]
-en = "Игрок получает 2 победных очка, уничтожив отряд противника в первом игровом раунде. (Rulebook)"
+en = "The player receives 2 victory points for destroying an enemy unit in the first game turn. (Rulebook)"
 ru = "Игрок получает 2 победных очка, уничтожив отряд противника в первом игровом раунде. (Rulebook)"
 
 [[secondary]]
@@ -40,10 +40,10 @@ rolls = [2,3,4,5,6]
 
 [secondary.title]
 en = "Slay the warlord * (3)"
-ru = "Slay the warlord * (3)"
+ru = "Убить командующего * (3)"
 
 [secondary.text]
-en = "Игрок получает 3 победных очка, уничтожив персонажа из слота HQ. (Rulebook)"
+en = "The player receives 3 victory points for destroying a character from an HQ slot. (Rulebook)"
 ru = "Игрок получает 3 победных очка, уничтожив персонажа из слота HQ. (Rulebook)"
 
 [[secondary]]
@@ -52,10 +52,10 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Area control (3)"
-ru = "Area control (3)"
+ru = "Контроль территории (3)"
 
 [secondary.text]
-en = "Игрок получает 3 победных очка в конце хода, если контролирует не менее 3 целей и больше целей, чем противник."
+en = "The player receives 3 victory points at the end of the turn if they control at least 3 objectives and control more objectives than the opponent."
 ru = "Игрок получает 3 победных очка в конце хода, если контролирует не менее 3 целей и больше целей, чем противник."
 
 [[secondary]]
@@ -64,10 +64,10 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Objective secure (1)"
-ru = "Objective secure (1)"
+ru = "Цель под контролем (1)"
 
 [secondary.text]
-en = "Игрок получает 1 победное очко за каждую цель, контролируемую в начале хода."
+en = "The player receives 1 victory point for each objective controlled at the start of the turn."
 ru = "Игрок получает 1 победное очко за каждую цель, контролируемую в начале хода."
 
 
@@ -77,10 +77,10 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Killing ground (1)"
-ru = "Killing ground (1)"
+ru = "Бойня (1)"
 
 [secondary.text]
-en = "Игрок получает 1 победное очко за каждый уничтоженный вражеский отряд."
+en = "The player receives 1 victory point for each destroyed enemy unit."
 ru = "Игрок получает 1 победное очко за каждый уничтоженный вражеский отряд."
 
 
@@ -90,10 +90,10 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Martial Pride (2)"
-ru = "Martial Pride (2)"
+ru = "Воинская гордость (2)"
 
 [secondary.text]
-en = "Игрок получает 2 победных очка за каждую модель противника, убитую в поединке."
+en = "The player receives 2 victory points for each enemy model killed in a challenge."
 ru = "Игрок получает 2 победных очка за каждую модель противника, убитую в поединке."
 
 [[secondary]]
@@ -102,11 +102,11 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Engine Killer (1)"
-ru = "Engine Killer (1)"
+ru = "Убийца машин (1)"
 
 [secondary.text]
-en = "Игрок получает 1 победное очко за каждые полные 4HP у уничтоженных им единиц техники."
-ru = "Игрок получает 1 победное очко за каждые полные 4HP у уничтоженных им единиц техники."
+en = "The player receives 1 victory point for every full 4 HP of destroyed enemy vehicle units (except expendable)."
+ru = "Игрок получает 1 победное очко за каждые полные 4HP у уничтоженных им единиц техники (кроме expendable)."
 
 [[secondary]]
 id =  10
@@ -114,10 +114,10 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Combat Glory (2)"
-ru = "Combat Glory (2)"
+ru = "Рукопашная слава (2)"
 
 [secondary.text]
-en = "Игрок получает 2 победных очка за каждую победу в ближнем бою."
+en = "The player receives 2 victory points for each victory in close combat."
 ru = "Игрок получает 2 победных очка за каждую победу в ближнем бою."
 
 [[secondary]]
@@ -125,12 +125,12 @@ id =  11
 rolls = [4,5,6]
 
 [secondary.title]
-en = "Behind enemy lines (2)"
-ru = "Behind enemy lines (2)"
+en = "Behind enemy lines (1)"
+ru = "В тылу врага (1)"
 
 [secondary.text]
-en = "В конце вашего хода получите 2 очка за каждый ваш отряд в зоне расстановки противника."
-ru = "В конце вашего хода получите 2 очка за каждый ваш отряд в зоне расстановки противника."
+en = "At the end of your turn, receive 1 victory point for each of your units in the opponent's deployment zone."
+ru = "В конце вашего хода получите 1 победное очко за каждый ваш отряд в зоне расстановки противника."
 
 [[secondary]]
 id =  12
@@ -138,10 +138,10 @@ rolls = [4,5,6]
 
 [secondary.title]
 en = "Engage on all fronts (1)"
-ru = "Engage on all fronts (1)"
+ru = "Полномасштабное наступление (1)"
 
 [secondary.text]
-en = "В начале вашего хода, получите одно победное очко за каждую четверть стола, которую вы контролируете."
+en = "At the start of your turn, receive one victory point for each table quarter you control."
 ru = "В начале вашего хода, получите одно победное очко за каждую четверть стола, которую вы контролируете."
 
 
@@ -150,9 +150,9 @@ id =  13
 rolls = [4,5,6]
 
 [secondary.title]
-en = "SECURE NO MAN’S LAND (2)"
-ru = "SECURE NO MAN’S LAND (2)"
+en = "Secure no man’s land (2)"
+ru = "Занять ничейную землю (2)"
 
 [secondary.text]
-en = "В начале вашего хода получите два победных очка, если контролируете территорию вне зон расстановки."
+en = "At the start of your turn, receive two victory points if you control territory outside of deployment zones."
 ru = "В начале вашего хода получите два победных очка, если контролируете территорию вне зон расстановки."

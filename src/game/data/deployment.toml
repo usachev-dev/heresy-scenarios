@@ -5,7 +5,7 @@ rolls = [1]
 
 [deployment.title]
 en = "Search and Destroy"
-ru = "Search and Destroy"
+ru = "Найти и уничтожить"
 
 [deployment.text]
 en = ""
@@ -18,7 +18,7 @@ rolls = [2]
 
 [deployment.title]
 en = "Crucible of Battle"
-ru = "Crucible of Battle"
+ru = "Крещение огнем"
 
 [deployment.text]
 en = ""
@@ -32,7 +32,7 @@ rolls = [3, 4]
 
 [deployment.title]
 en = "Hammer and Anvil"
-ru = "Hammer and Anvil"
+ru = "Молот и наковальня"
 
 [deployment.text]
 en = ""
@@ -45,7 +45,7 @@ rolls = [5, 6]
 
 [deployment.title]
 en = "Dawn of War"
-ru = "Dawn of War"
+ru = "Заря войны"
 
 [deployment.text]
 en = ""

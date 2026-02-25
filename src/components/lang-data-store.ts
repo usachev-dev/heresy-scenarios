@@ -92,7 +92,7 @@ export class LangDataStore {
     return "";
   }
 
-  linkToLang(path: string, lang: Lang) {
+  linkToLang(path: string, lang: Lang, searchParams?: URLSearchParams) {
     let prefix = {
       en: "",
       ru: "ru/",
@@ -107,6 +107,9 @@ export class LangDataStore {
       fragments = fragments.slice(1, fragments.length);
     }
     url.pathname = trimEnd(`/${prefix[lang]}${fragments.join("/")}`, "/");
+    if (!!searchParams) {
+      url.search = searchParams.toString()
+    }
     return url.toString();
   }
 

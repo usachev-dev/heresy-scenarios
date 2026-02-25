@@ -4,7 +4,7 @@ rolls = [1,2,3,4,5,6]
 
 [special.title]
 en = "Reserves *"
-ru = "Reserves *"
+ru = "Резервы *"
 
 [special.text]
 en = "(Rulebook)"
@@ -16,7 +16,7 @@ rolls = [1,2,3,4,5,6]
 
 [special.title]
 en = "Counter Offensive *"
-ru = "Counter Offensive *"
+ru = "Контратака *"
 
 [special.text]
 en = "(Rulebook)"
@@ -28,7 +28,7 @@ rolls = [2,3,4,5,6]
 
 [special.title]
 en = "Seize the Initiative *"
-ru = "Seize the Initiative *"
+ru = "Перехват инициативы *"
 
 [special.text]
 en = "(Rulebook)"
@@ -41,10 +41,10 @@ rolls = [5,6]
 
 [special.title]
 en = "Low Orbit"
-ru = "Low Orbit"
+ru = "Низкая орбита"
 
 [special.text]
-en = "Вы можете выводить до 2 отрядов из Deep Strike в ход."
+en = "You may bring up to 2 units in from Deep Strike per turn."
 ru = "Вы можете выводить до 2 отрядов из Deep Strike в ход."
 
 
@@ -54,11 +54,11 @@ rolls = [6]
 
 [special.title]
 en = "Quick Deployment"
-ru = "Quick Deployment"
+ru = "Быстрое развертывание"
 
 [special.text]
-en = "Отряды, могут выходить из Deep Strike на первый ход."
-ru = "Отряды, могут выходить из Deep Strike на первый ход."
+en = "Units may come in from Deep Strike on the first turn."
+ru = "Отряды могут выходить из Deep Strike на первый ход."
 
 
 [[special]]
@@ -67,10 +67,10 @@ rolls = [6]
 
 [special.title]
 en = "Aerial Assault"
-ru = "Aerial Assault"
+ru = "Десант атакует"
 
 [special.text]
-en = "Отряды не могуть выходить из Deep Strike менее чем в 5\" от отрядов противника. Отряды, вышедшие из Deep Strike, могут совершать disordered charge в тот же ход."
+en = "Units cannot arrive from Deep Strike within 5\" of enemy units. Units that arrive from Deep Strike may make a disordered charge in the same turn."
 ru = "Отряды не могуть выходить из Deep Strike менее чем в 5\" от отрядов противника. Отряды, вышедшие из Deep Strike, могут совершать disordered charge в тот же ход."
 
 
@@ -80,10 +80,10 @@ rolls = [6]
 
 [special.title]
 en = "Rapid Ingress"
-ru = "Rapid Ingress"
+ru = "Быстрое внедрение"
 
 [special.text]
-en = "Вы можете вывести один отряд в ход из Deep Strike как реакцию на перемещение в ход противника."
+en = "You may bring one unit in per turn from Deep Strike as a reaction to an enemy movement during the opponent's turn."
 ru = "Вы можете вывести один отряд в ход из Deep Strike как реакцию на перемещение в ход противника."
 
 
@@ -93,10 +93,10 @@ rolls = [6]
 
 [special.title]
 en = "Night Fight"
-ru = "Night Fight"
+ru = "Ночной бой"
 
 [special.text]
-en = "Игра начинается ночью. В конце хода второго игрока, он кидает кубик, на 3+ ночь заканчивается. Пока продолжается ночь, вся стрельба дальше 12\" делается снап-шотами."
+en = "The game begins at night. At the end of the second player's turn, they roll a die; on a 3+, the night ends. While night continues, all shooting beyond 12\" is resolved as Snap Shots."
 ru = "Игра начинается ночью. В конце хода второго игрока, он кидает кубик, на 3+ ночь заканчивается. Пока продолжается ночь, вся стрельба дальше 12\" делается снап-шотами."
 
 
@@ -106,10 +106,10 @@ rolls = [6]
 
 [special.title]
 en = "Escalation"
-ru = "Escalation"
+ru = "Эскалация"
 
 [special.text]
-en = "В начале игры каждый игрок может выставить на стол не более одного персонажа типа infantry, 2 отрядов категории troops и 1 отряда категории support. Все остальные войска обязаны начинать игру в резерве."
+en = "At the start of the game, each player may deploy on the table no more than one Infantry character, two Troops category units, and one Support category unit. All other troops must begin the game in Reserve."
 ru = "В начале игры каждый игрок может выставить на стол не более одного персонажа типа infantry, 2 отрядов категории troops и 1 отряда категории support. Все остальные войска обязаны начинать игру в резерве."
 
 
@@ -119,10 +119,10 @@ rolls = [6]
 
 [special.title]
 en = "Emperor's Teeth"
-ru = "Emperor's Teeth"
+ru = "Зубы Императора"
 
 [special.text]
-en = "Противник не может попадать в ближнем бою по моделям, вооруженным chain-оружием, лучше чем на 4+."
+en = "The opponent cannot hit models armed with chain weapons in close combat on better than a 4+."
 ru = "Противник не может попадать в ближнем бою по моделям, вооруженным chain-оружием, лучше чем на 4+."
 
 
@@ -132,10 +132,10 @@ rolls = [6]
 
 [special.title]
 en = "Last stand"
-ru = "Last stand"
+ru = "До последнего"
 
 [special.text]
-en = "Отряды, подверженные статусам, помимо broken, могут скорить точки, но теряют line."
+en = "Units subject to statuses other than Broken may score objectives but lose Line special rule."
 ru = "Отряды, подверженные статусам, помимо broken, могут скорить точки, но теряют line."
 
 
@@ -145,10 +145,10 @@ rolls = [5,6]
 
 [special.title]
 en = "Open ground"
-ru = "Open ground"
+ru = "Открытая местность"
 
 [special.text]
-en = "Кавалерия может скорить основные цели."
+en = "Cavalry may score primary objectives."
 ru = "Кавалерия может скорить основные цели."
 
 
@@ -158,10 +158,10 @@ rolls = [5,6]
 
 [special.title]
 en = "Cityfight"
-ru = "Cityfight"
+ru = "Городской бой"
 
 [special.text]
-en = "Новый тип ландшафта: руины. Дают пехоте 4+ укрытие. Непроходимы для техники. Сложный и опасный ландшафт для кавалерии. Линии видимости, начавшиеся снаружи руины, не могут покинуть руину."
+en = "New type of terrain: Ruins. Provide Infantry with a 4+ cover save. Impassable to vehicles. Difficult and Dangerous terrain for Cavalry. Lines of sight that originate outside the Ruins cannot leave the Ruins."
 ru = "Новый тип ландшафта: руины. Дают пехоте 4+ укрытие. Непроходимы для техники. Сложный и опасный ландшафт для кавалерии. Линии видимости, начавшиеся снаружи руины, не могут покинуть руину."
 
 
@@ -171,10 +171,10 @@ rolls = [6]
 
 [special.title]
 en = "Jagged Alliance"
-ru = "Jagged Alliance"
+ru = "Шаткий союз"
 
 [special.text]
-en = "Все отряды из allied-детачментов получают -2 к ментальным характеристикам."
+en = "All units from Allied Detachments receive a -2 penalty to their Leadership characteristics."
 ru = "Все отряды из allied-детачментов получают -2 к ментальным характеристикам."
 
 
@@ -184,10 +184,10 @@ rolls = [6]
 
 [special.title]
 en = "Brutal Attack"
-ru = "Brutal Attack"
+ru = "Жестокое нападение"
 
 [special.text]
-en = "Успешно совершив нападение, кроме disordered, модели получают +1 атаку в первом раунде боя."
+en = "Upon successfully making a charge that is not Disordered, models receive +1 Attack in the first round of combat."
 ru = "Успешно совершив нападение, кроме disordered, модели получают +1 атаку в первом раунде боя."
 
 
@@ -197,10 +197,10 @@ rolls = [5, 6]
 
 [special.title]
 en = "Stand your ground"
-ru = "Stand your ground"
+ru = "Ни шагу назад"
 
 [special.text]
-en = "Отряды в радиусе контроля основных целей не могут использовать реакции перемещения."
+en = "Units within control range of primary objectives cannot use movement reactions."
 ru = "Отряды в радиусе контроля основных целей не могут использовать реакции перемещения."
 
 
@@ -211,10 +211,10 @@ rolls = [6]
 
 [special.title]
 en = "Chain of Command"
-ru = "Chain of Command"
+ru = "Командная структура"
 
 [special.text]
-en = "Отряды, в радиусе 12\" от которых нет дружественных моделей категории HQ или Command в начале хода, должны проходить Cool check или получать статус Pinned"
+en = "Units that have no friendly models from an HQ or Command category within 12\" at the start of the turn must take a Cool check or gain the Pinned status."
 ru = "Отряды, в радиусе 12\" от которых нет дружественных моделей категории HQ или Command в начале хода, должны проходить Cool check или получать статус Pinned"
 
 
@@ -225,10 +225,10 @@ rolls = [6]
 
 [special.title]
 en = "Commanding presence"
-ru = "Commanding presence"
+ru = "Воодушевление"
 
 [special.text]
-en = "Отряды, находящиеся в 12\" от дружественных моделей категории HQ или Command могут использовать их характеристики Leadership и Cool"
+en = "Units that are within 12\" of friendly models from an HQ or Command category may use their Leadership and Cool characteristics."
 ru = "Отряды, находящиеся в 12\" от дружественных моделей категории HQ или Command могут использовать их характеристики Leadership и Cool"
 
 

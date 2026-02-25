@@ -17,7 +17,6 @@ const Builder: FC = () => {
       <h2>{t("deploymentTypeTitle")}</h2>
       <p>{t("deploymentTypeSubtitle")}</p>
       <OptionComponent option={s.deployment} skipInfo={true} />
-
       <h2>{t("primaryTitle")}</h2>
       <OptionComponent option={s.primary} skipInfo={true} />
       <h2>{t("durationTitle")}</h2>
@@ -25,11 +24,11 @@ const Builder: FC = () => {
       <h2>{t("secondaryTitle")}</h2>
       <p>{t("secondarySubtitle")}</p>
       {
-        s.secondaries.map(o => <OptionComponent option={o} skipInfo={true} />)
+        s.secondaries.map((o, i) => <OptionComponent option={o} skipInfo={true} key={i} />)
       }
       <h2>{t("specialTitle")}</h2>
       {
-        s.specials.map(o => <OptionComponent option={o} skipInfo={true} />)
+        s.specials.map((o, i) => <OptionComponent option={o} skipInfo={true} key={i} />)
       }
 
     </main>

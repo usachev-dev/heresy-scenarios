@@ -3,11 +3,11 @@ id =  1
 rolls = [1]
 
 [primary.title]
-en = "7 целей"
+en = "7 objectives"
 ru = "7 целей"
 
 [primary.text]
-en = "Одна цель выставляется в центре стола. Остальные цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 9\" от других точек и не менее чем в 6\" от краев стола. Центральная цель приносит 2 победных очка. Остальные цели приносят 1 победное очко."
+en = "One objective is placed in the center of the table. The remaining objectives are placed by the players alternately, starting with the first player, outside of deployment zones, at least 9\" from other objective points and at least 6\" from the table edges. The central objective is worth 2 victory points. The other objectives are worth 1 victory point each."
 ru = "Одна цель выставляется в центре стола. Остальные цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 9\" от других точек и не менее чем в 6\" от краев стола. Центральная цель приносит 2 победных очка. Остальные цели приносят 1 победное очко."
 
 [[primary]]
@@ -16,10 +16,10 @@ rolls = [2]
 
 [primary.title]
 en = "2 цели"
-ru = "2 цели"
+ru = "2 objectives"
 
 [primary.text]
-en = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 3 победных очка."
+en = "Objectives are placed by the players alternately, starting with the first player, at least 12\" from other objective points and at lease 6\" from the table edges and deployment zones. Each objective is worth 3 victory points."
 ru = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 3 победных очка."
 
 [[primary]]
@@ -27,11 +27,11 @@ id =  3
 rolls = [3]
 
 [primary.title]
-en = "3 цели"
+en = "3 objectives"
 ru = "3 цели"
 
 [primary.text]
-en = "Одна цель выставляется в центре стола. Остальные цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола. Центральная цель приносит 4 победных очка. Остальные цели приносят 2 победных очка."
+en = "One objective is placed in the center of the table. The remaining objectives are placed by the players alternately, starting with the first player, outside of deployment zones, at least 12\" from other objective points and at least 6\" from the table edges. The central objective is worth 4 victory points. The other objectives are worth 2 victory points each."
 ru = "Одна цель выставляется в центре стола. Остальные цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола. Центральная цель приносит 4 победных очка. Остальные цели приносят 2 победных очка."
 
 [[primary]]
@@ -39,23 +39,23 @@ id =  4
 rolls = [4]
 
 [primary.title]
-en = "4 цели"
+en = "4 objectives"
 ru = "4 цели"
 
 [primary.text]
-en = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 3 победных очка. Каждая цель приносит 1 победное очко."
-ru = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 3 победных очка. Каждая цель приносит 1 победное очко."
+en = "Objectives are placed by the players alternately, starting with the first player, at least 12\" from other objective points and at least 6\" from the table edges and deployment zones. Each objective is worth 1 victory point."
+ru = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 1 победное очко."
 
 [[primary]]
 id =  5
 rolls = [5]
 
 [primary.title]
-en = "5 целей"
+en = "5 objectives"
 ru = "5 целей"
 
 [primary.text]
-en = "Одна цель выставляется в центре стола. Остальные цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола. Центральная цель приносит 3 победных очка. Остальные цели приносят 1 победное очко."
+en = "One objective is placed in the center of the table. The remaining objectives are placed by the players alternately, starting with the first player, outside of deployment zones, at least 12\" from other objective points and at least 6\" from the table edges. The central objective is worth 3 victory points. The other objectives are worth 1 victory point each."
 ru = "Одна цель выставляется в центре стола. Остальные цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола. Центральная цель приносит 3 победных очка. Остальные цели приносят 1 победное очко."
 
 [[primary]]
@@ -63,9 +63,9 @@ id =  6
 rolls = [6]
 
 [primary.title]
-en = "6 целей"
+en = "6 objectives"
 ru = "6 целей"
 
 [primary.text]
-en = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 3 победных очка. Цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 9\" от других точек и не менее чем в 6\" от краев стола. Каждая цель приносит 1 победное очко."
-ru = "Цели выставляются игроками по-очереди, начиная с первого игрока, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола и зон расстановки. Каждая цель приносит 3 победных очка. Цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 9\" от других точек и не менее чем в 6\" от краев стола. Каждая цель приносит 1 победное очко."
+en = "Objectives are placed by the players alternately, starting with the first player, outside the deployment zones, at least 12\" from other objective points and at least 6\" from the table edges. Each objective is worth 1 victory point."
+ru = "Цели выставляются игроками по-очереди, начиная с первого игрока, вне зон расстановки, не менее чем в 12\" от других точек и не менее чем в 6\" от краев стола. Каждая цель приносит 1 победное очко."

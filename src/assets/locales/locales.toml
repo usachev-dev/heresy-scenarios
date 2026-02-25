@@ -1,10 +1,10 @@
 [title]
-en = "Horus Heresy v3 Scenario builder"
-ru = "Horus Heresy v3: Конструктор Сценариев"
+en = "Horus Heresy v3 Scenario Generator"
+ru = "Horus Heresy v3: Генератор Сценариев"
 
 [description]
-en = "Diverse system for playing both narrative and competitive scenarions in Horus Heresy v3"
-ru = "Гибкая система сценариев для Horus Heresy v3, как для нарративной игры, так и для турниров"
+en = "Diverse system for generating both narrative and competitive scenarions in Horus Heresy v3"
+ru = "Гибкая система генерации сценариев для Horus Heresy v3, как для нарративной игры, так и для турниров"
 
 [keywords]
 en = "Wargame, warhammer, horus heresy, scenarios"
@@ -19,49 +19,49 @@ en = "Read"
 ru = "Читать"
 
 [textTitle]
-ru = "Конструктор сценариев для Ереси Хоруса"
-en = "Конструктор сценариев для Ереси Хоруса"
+en = "Horus Heresy v3 Scenario Generator"
+ru = "Horus Heresy v3: Генератор Сценариев"
 
 [text1p0]
 ru = "Миссии считаются core миссиями, и используются все правила из книги правил. Если спецправила миссии противоречат книге правил, приоритет имеют специальные правила миссии."
-en = "Миссии считаются core миссиями, и используются все правила из книги правил. Если спецправила миссии противоречат книге правил, приоритет имеют специальные правила миссии."
+en = "Missions are considered core missions, and all rules from the rulebook are used. If the mission special rules contradict the rulebook, the mission special rules take priority."
 
 [text1p1]
-ru = "Сценарий для Ереси Хоруса состоит из пяти частей: тип расстановки, основные цели, побочные цели, длина и спецправила. Система предлагает несколько вариантов определения сценария"
-en = "Сценарий для Ереси Хоруса состоит из пяти частей: тип расстановки, основные цели, побочные цели, длина и спецправила. Система предлагает несколько вариантов определения сценария"
+ru = "Сценарий состоит из пяти частей: тип расстановки, основные цели, побочные цели, длина и спецправила. Система предлагает несколько вариантов определения сценария."
+en = "The scenario consists of five parts: deployment type, primary objectives, secondary objectives, length, and special rules. The system offers several options for determining the scenario."
 
 [text1p2]
 ru = "Во-первых, вы можете произвольно выбрать все параметры сценария."
-en = "Во-первых, вы можете произвольно выбрать все параметры сценария."
+en = "First, you can freely choose all the scenario parameters."
 
 [text1p3]
 ru = "Во-вторых, вы можете определить параметры броском кубика. Для определения типа расстановки, основной цели и длины, киньте один д6 и выберите соответствующий вариант. Для определения спецправил и побочных целей, кидайте д6 за каждое из спецправил; оно выбрано, если число на кубике больше значения, указанного в правила. Делайте так, пока не будет выбрано достаточное количество."
-en = "Во-вторых, вы можете определить параметры броском кубика. Для определения типа расстановки, основной цели и длины, киньте один д6 и выберите соответствующий вариант. Для определения спецправил и побочных целей, кидайте д6 за каждое из спецправил; оно выбрано, если число на кубике больше значения, указанного в правила. Делайте так, пока не будет выбрано достаточное количество."
+en = "Second, you can determine the parameters by rolling dice. To determine the deployment type, primary objective, and mission length, roll one D6 and select the corresponding option. To determine special rules and secondary objectives, roll a D6 for each special rule; it is selected if the number on the die is greater than the value specified in the rules. Do this until enough have been selected."
 
 [deploymentTypeTitle]
-en = "Расстановка"
+en = "Deployment"
 ru = "Расстановка"
 
 [deploymentTypeSubtitle]
-en = "Клетки на схеме расстановки со стороной 3\""
+en = "The squares on the deployment diagram are 3 inches wide"
 ru = "Клетки на схеме расстановки со стороной 3\""
 
 [primaryTitle]
-en = "Основные цели"
+en = "Primary objectives"
 ru = "Основные цели"
 
 [durationTitle]
-en = "Продолжительность игры"
+en = "Game duration"
 ru = "Продолжительность игры"
 
 [secondaryTitle]
-en = "Побочные цели"
+en = "Secondary objectives"
 ru = "Побочные цели"
 
 [secondarySubtitle]
-en = "Звездочка * означает, что побочная цель взята из основной книги правил. Выполнять побочные цели могут те же категории отрядов, что и основные цели. Правила line и vanguard не влияют на количество очков, получаемых за побочные цели."
+en = "An asterisk * means that the secondary objective is taken from the main rulebook. Secondary objectives can be completed by the same unit categories as primary objectives. The Line and Vanguard rules do not affect the number of points earned for secondary objectives."
 ru = "Звездочка * означает, что побочная цель взята из основной книги правил. Выполнять побочные цели могут те же категории отрядов, что и основные цели. Правила line и vanguard не влияют на количество очков, получаемых за побочные цели."
 
 [specialTitle]
-en = "Спецправила"
+en = "Special rules"
 ru = "Спецправила"

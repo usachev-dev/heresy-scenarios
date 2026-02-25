@@ -3,7 +3,7 @@ id =  1
 rolls = [1,2,3,4]
 
 [duration.title]
-en = "4 хода"
+en = "4 turns"
 ru = "4 хода"
 
 [[duration]]
@@ -11,7 +11,7 @@ id =  2
 rolls = [5]
 
 [duration.title]
-en = "5 ходов"
+en = "5 turns"
 ru = "5 ходов"
 
 [[duration]]
@@ -19,9 +19,9 @@ id =  3
 rolls = [6]
 
 [duration.title]
-en = "Случайная длина"
+en = "Random duraion"
 ru = "Случайная длина"
 
 [duration.text]
-en = "В конце 3 хода второго игрока, киньте кубик. На 2+ играется четвертый ход. В конце 4 хода второго игрока, киньте кубик. На 5+ играется пятый ход."
+en = "At the end of the second player's Turn 3, roll a die. On a 2+, a fourth turn is played. At the end of the second player's Turn 4, roll a die. On a 5+, a fifth turn is played."
 ru = "В конце 3 хода второго игрока, киньте кубик. На 2+ играется четвертый ход. В конце 4 хода второго игрока, киньте кубик. На 5+ играется пятый ход."

@@ -1,5 +1,5 @@
 import React, {FC, useContext, useEffect, useState} from "react";
-import {Link, useLocation, useParams} from "react-router-dom";
+import {Link, useLocation, useParams, useSearchParams} from "react-router-dom";
 import {LangDataStoreContext} from "./lang-data-store-context";
 import {trimEnd} from "lodash-es";
 import logo from "../assets/images/logo-white.png";
@@ -45,6 +45,7 @@ const Navbar: FC = () => {
   let langDataStore = useContext(LangDataStoreContext);
   let location = useLocation();
   let path = location.pathname.replace("//", "/");
+  let [urlSearchParams] = useSearchParams()
   let params = useParams();
   let langParam = params["lang"] || "";
   let isHome =
@@ -56,7 +57,7 @@ const Navbar: FC = () => {
     (acc: Record<string, string>, lang, _) => {
       return {
         ...acc,
-        [lang]: l.linkToLang(path, lang),
+        [lang]: l.linkToLang(path, lang, urlSearchParams),
       };
     },
     {},
