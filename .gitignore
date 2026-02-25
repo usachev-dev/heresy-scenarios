@@ -6,7 +6,5 @@ dist
 *.log
 *.rar
 *.zip
-./public
-public
 ./.firebase
 .firebase
