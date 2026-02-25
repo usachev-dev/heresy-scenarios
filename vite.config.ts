@@ -7,19 +7,14 @@ import {ViteToml} from 'vite-plugin-toml';
 // @ts-ignore
 import mdLoader, {Mode} from 'vite-plugin-markdown';
 
-let host = "https://clouds-of-smoke.com"
+let host = "https://heresy-scenarios.web.app/"
 // @ts-ignore
 let isDev = process.env.npm_lifecycle_event == "dev";
-let isBeta = true;
 
-if (isBeta) {
-  host = "https://clouds-beta.web.app"
-}
 if (isDev) {
   host = "http://localhost:3000"
 }
 
-let version = "2.0b"
 
 export default defineConfig({
   plugins: [
@@ -52,6 +47,6 @@ export default defineConfig({
   define: {
     HOST: JSON.stringify(host),
     ISDEV: JSON.stringify(isDev),
-    VERSION: JSON.stringify(version)
+    VERSION: JSON.stringify(1)
   }
 });
