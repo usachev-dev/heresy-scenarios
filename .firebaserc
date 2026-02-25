@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "clouds-of-smoke",
-    "beta": "clouds-beta"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "heresy-scenarios"
+  }
 }
