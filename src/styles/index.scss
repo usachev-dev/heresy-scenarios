@@ -331,7 +331,8 @@ button,
 ///////////////////
 
 img {
-    max-width: 100%;
+    max-width: 900px;
+    max-height: 50vh;
     @media screen and (max-width: 959px) {
         max-width: calc(100% - 2rem);
     }
